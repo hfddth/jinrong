@@ -1,13 +1,7 @@
-# 银智养融官方网站
+# 银智养融官网与资料复核平台 v2
 
-静态官网及FTIOR评估平台，上传全部文件到网站根目录即可运行。
+主入口 index.html；上传解析 assessment.html；人工专业复核 expert-review.html。
 
-入口：index.html。评估：assessment.html。材料：guide.html。隐私：privacy.html。
+支持DOCX、UTF-8 TXT/CSV/JSON本地解析。DOCX使用浏览器DecompressionStream，浏览器不支持时明确失败；PDF与扫描件需要转换或OCR。关键词仅建立候选证据索引，不自动评分。无后端、无文件外传、无大模型API。
 
-不需要安装依赖。可本地打开index.html，或用 `python -m http.server 8080` 启动。
-
-支持人工五维评分、雷达图、风险分级、红线核查、融资测算、三期监测、本机保存、JSON导入导出、CSV和HTML Word报告、浏览器打印PDF。
-
-未实现OCR自动识别评分、云账户和数据库。不得将研究方案宣传为真实银行授信承诺。
-
-GitHub Pages：将文件导入仓库默认分支根目录后，在仓库 Settings → Pages 中选择 Deploy from a branch，再选择默认分支和 /(root)。请勿上传企业原始文档或个人联系信息。
+待复核报告包含文件状态、来源段落、五维缺口和待办；人工评分后沿用FTIOR固定权重生成辅助报告。案例在独立cases.html，不参与真实企业评分。
